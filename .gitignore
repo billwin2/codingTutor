@@ -27,3 +27,7 @@ dist/
 
 # Logs
 *.log
+
+# Ignore local project structure files
+project-cleaned.txt
+project-structure.txt
