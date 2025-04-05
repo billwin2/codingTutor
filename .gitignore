@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.vscode/
+.qodo
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# dotenv
+.env
+
+# Node
+node_modules/
+dist/
+
+# VSCode/IDE
+.vscode/
+.qodo
+*.code-workspace
+
+# Logs
+*.log
