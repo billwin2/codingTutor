@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+dist/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.qodo
+*.code-workspace
+
+# Log files
+*.log

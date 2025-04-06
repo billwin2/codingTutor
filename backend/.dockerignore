@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.Python
+
+# Environment files
+.env
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.qodo
+*.code-workspace
