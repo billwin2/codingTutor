@@ -24,11 +24,12 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # frontend dev server
+    allow_origins=["https://coding-tutor-woad.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.get("/", tags=["Welcome"])
 def read_root():
