@@ -38,10 +38,10 @@ const App: React.FC = () => {
               ? { question, language }
               : { code: question, language };
   
-          const res = await fetch(`http://localhost:8000${endpoint}`, {
+          const res = await fetch(`https://codingtutor.onrender.com${endpoint}`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(payload),
+              body: JSON.stringify(payload)
           });
   
           if (!res.ok) throw new Error(`Server responded with status ${res.status}`);
