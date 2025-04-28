@@ -5,21 +5,21 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
-# ✅ Load .env from the main project folder (explicit path)
+# Load .env from the main project folder (explicit path)
 dotenv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.env"))
 load_dotenv(dotenv_path)
 
-# ✅ Retrieve API Key
+# Retrieve API Key
 api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
     print("⚠️ ERROR: OPENAI_API_KEY is missing! Check .env file location.")
     raise ValueError("⚠️ ERROR: OPENAI_API_KEY is missing! Make sure .env is properly set.")
 
-# ✅ Initialize OpenAI Client
+# Initialize OpenAI Client
 client = openai.OpenAI(api_key=api_key)
 
-# ✅ Initialize FastAPI App
+# Initialize FastAPI App
 app = FastAPI()
 
 app.add_middleware(
